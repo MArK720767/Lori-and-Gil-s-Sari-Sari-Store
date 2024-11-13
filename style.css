@@ -1,0 +1,195 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation bar */
+header {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    list-style: none;
+}
+
+.navbar li a {
+    color: #ffffff; /* Greenish yellow */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.navbar li a.signup-btn {
+    color: #0c0c0c; /* Different color for "Sign Up" */
+}
+
+.navbar li a:hover {
+    color: #ffee6a;
+    
+}
+
+.navbar li a:active,
+.navbar li a:focus{
+    color: #000000;
+    background-color: #d4d700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 8px
+}
+
+.navbar li a.active {
+    color: #000000;
+    background-color: #d4d700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Signup button styling */
+.signup-btn {
+    color: #000000;
+    background-color: #d4d700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.signup-btn:hover {
+    background-color: #000000;
+    color: #d4d700;
+}
+
+/* Section styling */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+#home {
+    background: url('images/food-banner.jpg') no-repeat center center/cover;
+    color: #fff; /* Ensure text color is white for contrast */
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative; /* Allows for a background overlay if needed */
+}
+
+/* Optional: Add an overlay for better contrast */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    z-index: 1;
+}
+
+#home h1, #home p {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+#products, #testimonials, #contact {
+    background-color: #f3f3f3;
+    margin: 1rem 0;
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #d4d700;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #000;
+    color: #d4d700;
+}
+
+/* Responsive Design */
+
+/* For tablets and larger screens (768px and above) */
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    #home {
+        padding: 4rem;
+        font-size: 1.2rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+}
+
+/* For desktops and larger screens (1024px and above) */
+@media (min-width: 1024px) {
+    section {
+        padding: 3rem 5rem;
+    }
+
+    .navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+/* For smaller screens (phones, below 768px) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        padding: 0.5rem 0;
+    }
+
+    /* Home section text for mobile */
+    #home {
+        font-size: 1.1rem;
+        padding: 3rem 1rem;
+    }
+
+    /* Adjust form for small screens */
+    form {
+        width: 90%;
+    }
+}
