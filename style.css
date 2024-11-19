@@ -231,15 +231,136 @@ section {
 
 /* PRODUCTS  */
 
-#products, #testimonials, #contact {
-    background-color: #f3f3f3;
-    margin: 1rem 0;
+section {   
+    padding: 0; 
+    text-align: center; 
+
+}
+
+.image-container { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper {
+    position: relative; /* Position relative for the wrapper */
+}
+
+#image1 {
+    width: 100%; /* Make the first image take full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a max height for the image */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */      
+}
+
+.overlay-text {
+    position: absolute; /* Position absolute for the text */
+    top: 80%; /* Center vertically */
+    left: 75%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for text size */
+    color: #000; /* Text color */
+    background-color: #d4d700; /* Semi-transparent background */
+    padding: 1px; /* Padding around the text */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px; /* Font size */
+    font-family: 'Koulen', sans-serif; /* Use the Koulen font */
+    text-align: center; /* Center text */
+}
+
+.text1 {
+    position: absolute; /* Position absolute for the text */
+    top: 115%; /* Center vertically */
+    left: 25%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for text size */
+    color: #000; /* Text color */
+    background-color: #d4d700; /* Semi-transparent background */
+    padding: 1px; /* Padding around the text */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px; /* Font size */
+    font-family: 'Koulen', sans-serif; /* Use the Koulen font */
+    text-align: center; /* Center text */
 }
 
 
+.text2 {
+    position: absolute; /* Position absolute for the text */
+    top: 155%; /* Center vertically */
+    left: 23%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for text size */
+    color: #000; /* Text color */
+    background-color: #d4d700; /* Semi-transparent background */
+    padding: 1px; /* Padding around the text */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px; /* Font size */
+    font-family: 'Koulen', sans-serif; /* Use the Koulen font */
+    text-align: center; /* Center text */
+}
+.text3 {
+    position: absolute; /* Position absolute for the text */
+    top: 195%; /* Center vertically */
+    left: 26%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for text size */
+    color: #000; /* Text color */
+    background-color: #d4d700; /* Semi-transparent background */
+    padding: 1px; /* Padding around the text */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px; /* Font size */
+    font-family: 'Koulen', sans-serif; /* Use the Koulen font */
+    text-align: center; /* Center text */
+}
+.text4 {
+    position: absolute; /* Position absolute for the text */
+    top: 235%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for text size */
+    color: #ffffff; /* Text color */
+    padding: 1px; /* Padding around the text */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px; /* Font size */
+    font-family: 'Koulen', sans-serif; /* Use the Koulen font */
+    text-align: center; /* Center text */
+}
 
 
+.image-container .image2 { 
+    display: flex; 
+    flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 100px; 
+    height: 150px;
+    width: 700px; 
+    text-align: 'center'; 
+}
 
+
+.image-container .image3 { 
+    display: flex; 
+    flex-direction: column; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 100px; 
+    height: 150px; 
+    width: 700px; 
+    text-align: 'center';
+}
+
+.image-container .image4 { 
+    display: flex; 
+    flex-direction: column; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 100px; 
+    height: 150px; 
+    width: 700px; 
+    text-align: 'center'; 
+}
 
 
 
